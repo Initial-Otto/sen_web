@@ -1,0 +1,119 @@
+-- 1. 莱瑟塔档案（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '莱瑟塔档案：蜥蜴人的地球秘闻', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '莱瑟塔档案是一份1999年流传的神秘访谈记录，据称是记者Ole K.对一名自称蜥蜴人的女性“莱瑟塔”的采访。她声称爬虫人才是地球原住民，人类是外星种族“毕宿五星人”通过基因工程创造的产物。', '/img/post/R-C.jpg');
+
+-- 2. 日本都市传说扭来扭去（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '日本都市传说：扭来扭去（くねくね）', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '扭来扭去是日本著名的都市传说，起源于2003年网络论坛2ch。传说在稻田中出现的神秘白色人影，会无骨般扭动身体。目击者若用望远镜观察可能精神失常，甚至模仿扭动行为。', '/img/post/3F3F.jpg');
+
+-- 3. 蓝可儿悬案（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '蓝可儿悬案：塞西尔酒店之谜', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '蓝可儿案件是2013年加拿大华裔学生蓝可儿在洛杉矶塞西尔酒店离奇死亡事件。电梯监控录像显示她行为诡异，如躲避他人、手势异常。尸体在酒店水箱中发现，死因至今未明。', '/img/post/lke.jpg');
+
+-- 4. 黑色大丽花（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '黑色大丽花谋杀案：好莱坞世纪悬案', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '黑色大丽花案是1947年发生在洛杉矶的残酷谋杀案，受害者伊丽莎白·肖特的尸体被肢解为两半，现场几乎无血迹。案件轰动全美，但警方未找到真凶。此案成为美国历史上最著名的冷案之一。', '/img/post/dlh.jpg');
+
+-- 5. 后室Level 0（后室）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '后室Level 0：黄色走廊的迷失空间', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '后室是网络流行的都市传说，描述一个由无限非现实空间组成的维度。Level 0是后室的起点，特征为单调的黄色墙纸、荧光灯噪音和潮湿地毯。进入者会感到孤立无援，实体罕见但空间极易迷失。', '/img/post/backroom0.jpg');
+
+-- 6. 瘦长人（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '瘦长人：阴影中的超自然存在', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '瘦长人源自美国都市传说，形象为高大瘦削、穿西装的无面人，常在森林中出现并绑架儿童。传说通过Photoshop比赛传播，后衍生出游戏和电影。2014年威斯康辛州甚至发生了受其启发的伤人事件。', '/img/post/slender_man.jpg');
+
+-- 7. 如月车站（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '如月车站：误入不存在的终点站', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '如月车站是日本2ch论坛2004年流传的怪谈。一名女子深夜乘电车误入不存在的“如月车站”，周围荒芜，遇怪人后发帖求助最终失联。传说象征对未知空间的恐惧，近年有自称当事者回归的版本。', '/img/post/kisaragi_station.jpg');
+
+-- 8. 开膛手杰克（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '开膛手杰克：白教堂连环杀手之谜', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '开膛手杰克是1888年伦敦白教堂区针对妓女的连环杀人案凶手，手段残忍并寄信挑衅警方。身份成谜，嫌疑者包括医生、画家等，但无确证。此案推动现代犯罪心理学发展，是历史上最著名的悬案之一。', '/img/post/jack_ripper_letter.jpg');
+
+-- 9. 黄道十二宫杀手（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '黄道十二宫杀手：密码信挑衅警方', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '黄道十二宫杀手是1960-70年代美国加州连环杀手，杀害至少5人。凶手寄送加密信件给媒体，部分密码未破译。案件多次被改编为电影，如《十二宫》，2000年曾通过DNA检测锁定嫌疑但证据不足。', '/img/post/zodiac_letter.jpg');
+
+-- 10. 蛙孩事件（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '蛙孩事件：洛夫克拉夫特式都市传说', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '蛙孩事件源于美国1950年代传说，描述加州一个家庭生下蛙形婴儿，被囚于地窖。故事混合了洛夫克拉夫特克苏鲁元素，后成为网络怪谈。体现了对遗传突变和未知生物的恐惧。', '/img/post/frog_boy.jpg');
+
+-- 11. 后室Level 188 - 百窗庭（后室）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '后室Level 188：百窗庭的奇异空间', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), 'Level 188被称为“百窗庭”，是一个布满窗户的无限庭院，窗外景色扭曲且不断变化。该层级存在名为“窗灵”的实体，会通过窗户观察并模仿流浪者的行为。', '/img/post/level_188.jpg');
+
+-- 12. 香港93年广九铁路广告事件（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '香港93年广九铁路广告灵异事件', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '1993年香港广九铁路广告中，据称拍摄到了不存在的第7个小孩。广告中多个孩子肩并肩行走，但细数发现其中多了一个人。该广告因灵异传闻被撤下，成为香港著名都市传说。', '/img/post/kowloon_ad.jpg');
+
+-- 13. 后室Level 906 - 无尽图书馆（后室）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '后室Level 906：无尽图书馆的知识迷宫', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), 'Level 906是一个无限延伸的图书馆，书架排列违反欧几里得几何。馆内书籍内容会随机变化，包含从常识到未知领域的知识。该层级相对安全，但容易使人迷失在知识海洋中。', '/img/post/level_906_library.jpg');
+
+-- 14. 迪亚特洛夫事件（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '迪亚特洛夫事件：雪山上的离奇死亡', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '1959年苏联乌拉尔山脉发生的登山队全体离奇死亡事件。帐篷由内割开，队员尸体分散在不同地点，有的仅穿内衣，有内伤但无外伤。官方结论为“强大的未知力量”导致，至今众说纷纭。', '/img/post/dyatlov_pass.jpg');
+
+-- 15. 圣女像之谜（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '圣女像流泪之谜：菲律宾超自然事件', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '菲律宾一教堂圣女像多次被称目睹流泪，送检样本据称含人泪成分。该现象引发科学和宗教界的争论，有人认为是超自然现象，也有人解释为冷凝作用或人为因素。', '/img/post/weeping_mary.jpg');
+
+-- 16. 后室Level 3999 - 我是镜子（后室）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '后室Level 3999：镜中世界的自我对话', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), 'Level 3999是一个充满镜子的空间，镜中倒影可能产生自我意识并与旅行者互动。该层级会挑战旅行者的自我认知，长时间停留可能导致现实感知混乱。', '/img/post/level_3999_mirror.jpg');
+
+-- 17. 橡皮人（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '橡皮人：中国公路上的诡异身影', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '橡皮人是中国网络传说中身体可任意伸缩的怪异生物，常在夜间公路被目击。据说它会以扭曲的姿势横穿马路，速度极快，留下类似橡胶烧焦的气味。', '/img/post/rubber_man.jpg');
+
+-- 18. 后室Level 11 - 无尽城市（后室）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '后室Level 11：无尽城市的现代迷宫', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), 'Level 11是一个看似正常的无限延伸现代城市，有电力和水资源且实体较少，是后室中相对安全的据点之一。城市结构会缓慢变化，建筑物内部布局可能与外部表现不符。', '/img/post/level_11_city.jpg');
+
+-- 19. 八尺大人（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '八尺大人：日本乡村的恐怖传说', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '八尺大人是日本妖怪传说，形象为高大的女性，穿着白色连衣裙，发出“啵啵啵”的怪声。据说她会迫害特定目标，尤其是年轻男性，常见于乡村地区的目击报告。', '/img/post/hachishak-sama.jpg');
+
+-- 20. 林波波河怪物（未解之谜）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '林波波河怪物：非洲活恐龙传说', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '南非林波波河流域传说中存在类似史前水生爬行动物的生物“冷原”。当地居民声称目击到此生物，描述类似蜥脚类恐龙。多个探险队曾前往调查但均无确凿证据。', '/img/post/mokele-mbembe.jpg');
+
+-- 21. 后室Level 94 - 遗忘坟场（后室）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '后室Level 94：遗忘坟场的悲歌', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), 'Level 94是一个布满无名墓碑的雾霭之地，徘徊着失去记忆的“悲尸”实体。该层级会唤起闯入者的负面记忆，长时间停留可能导致记忆丧失。墓碑上的文字会随时间变化。', '/img/post/level_94_graveyard.jpg');
+
+-- 22. 沃尼奇手稿（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '沃尼奇手稿：无法破译的天书', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '沃尼奇手稿是一部用未知文字系统书写、配以奇异植物插图的中世纪古籍。数百年来密码专家试图破译但均告失败，内容至今成谜。碳定年显示手稿创作于15世纪初。', '/img/post/voynich_manuscript.jpg');
+
+-- 23. 哭泣的人（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '哭泣的人：多国流传的夜间恐怖', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '多国流传的都市传说，深夜街道上听到哭泣声，回头看见一个捂脸哭泣的人影。当接近时，人影会放下手露出没有五官的脸，或突然消失。常见于校园和医院相关怪谈。', '/img/post/weeping_man.jpg');
+
+-- 24. 赫斯达伦之光（未解之谜）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '赫斯达伦之光：挪威山谷的神秘光团', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '挪威赫斯达伦山谷自1980年代以来持续出现无法解释的神秘光团，以不同颜色、形状和运动模式出现。科学家提出等离子体、燃烧颗粒等多种理论但均未完全解谜。', '/img/post/hessdalen_lights.jpg');
+
+-- 25. 后室Level 37 - 无尽楼梯（后室）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '后室Level 37：永无止境的螺旋阶梯', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), 'Level 37是一个永远向上或向下延伸的楼梯间，伴有迷失感和低语声。楼梯间的灯光忽明忽暗，墙上的涂鸦会随观察者的心理状态变化。该层级极易导致空间定向障碍。', '/img/post/level_37_stairs.jpg');
+
+-- 26. 黑眼孩童（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '黑眼孩童：令人不安的夜间访客', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '黑眼孩童是1990年代末开始流传的超自然传说，描述眼睛全黑、无眼白的孩童在夜间敲门请求进入房屋或车辆。目击者报告感到极度恐惧和不适，有种被催眠的感觉。', '/img/post/black_eyed_children.jpg');
+
+-- 27. DB Cooper劫机案（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, 'DB Cooper：完美劫机悬案', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '1971年，一名自称Dan Cooper的男子劫持波音727客机，索要20万美元后携降落伞跳机消失。FBI调查45年未果，仅部分赎金在9年后被发现。此案成为美国最著名的未解劫机案。', '/img/post/db_cooper.jpg');
+
+-- 28. 撒旦恐慌（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '撒旦恐慌：1980年代的集体歇斯底里', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '1980年代美国广泛流传的都市传说，声称有秘密撒旦教组织在各地进行邪教活动。尽管执法部门调查发现绝大多数指控缺乏证据，但恐慌影响了流行文化和社会心理。', '/img/post/satanic_panic.jpg');
+
+-- 29. 珍宝机（悬案）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '珍宝机：D.B. Cooper之后的又一悬案', 2, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '1972年类似D.B. Cooper的劫机案，一名男子使用“James Johnson”的化名劫机索要赎金后跳伞消失。与Cooper不同，此案犯人使用了更复杂的计划和装备，但最终命运同样成谜。', '/img/post/james_johnson.jpg');
+
+-- 30. 微笑的男人（都市传说）
+INSERT INTO posts (user_id, title, section_id, created_at, last_replied_at) VALUES (1, '微笑的男人：都市传说与真实犯罪的交界', 1, NOW(), NOW());
+INSERT INTO post_contents (post_id, content_text, image_path) VALUES (LAST_INSERT_ID(), '2010年代开始流传的都市传说，描述一个无论何时都保持夸张笑容的男子跟踪、骚扰受害者。传说与现实中的几起跟踪案有相似之处，模糊了都市传说与真实犯罪的界限。', '/img/post/smiling_man.jpg');

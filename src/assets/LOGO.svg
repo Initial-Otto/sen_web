@@ -1,0 +1,66 @@
+<svg width="150" height="50" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- 小尺寸专用渐变 -->
+        <linearGradient id="miniNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00ff88"/>
+            <stop offset="100%" stop-color="#00cc66"/>
+        </linearGradient>
+
+        <linearGradient id="miniWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#dddddd"/>
+        </linearGradient>
+
+        <!-- 简化发光效果 -->
+        <filter id="miniGlow">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- 纯黑背景 -->
+    <rect width="100%" height="100%" fill="#000000"/>
+
+    <!-- 简化森林图形 -->
+    <g id="miniForest" transform="translate(10, 15)" filter="url(#miniGlow)">
+        <!-- 三棵简化树木 -->
+        <path d="M0,25 L5,10 L10,25 Z" fill="url(#miniNeon)"/>
+        <path d="M15,25 L20,5 L25,25 Z" fill="url(#miniNeon)"/>
+        <path d="M30,25 L35,15 L40,25 Z" fill="url(#miniNeon)"/>
+
+        <!-- 树木轮廓 -->
+        <path d="M0,25 L5,10 L10,25" fill="none" stroke="url(#miniWhite)" stroke-width="0.5"/>
+        <path d="M15,25 L20,5 L25,25" fill="none" stroke="url(#miniWhite)" stroke-width="0.5"/>
+        <path d="M30,25 L35,15 L40,25" fill="none" stroke="url(#miniWhite)" stroke-width="0.5"/>
+    </g>
+
+    <!-- 简化网络结构 -->
+    <g id="miniNetwork" transform="translate(45, 15)" opacity="0.8">
+        <!-- 小圆环 -->
+        <circle cx="20" cy="15" r="8" fill="none" stroke="url(#miniWhite)" stroke-width="1" stroke-dasharray="2,1"/>
+
+        <!-- 交叉线 -->
+        <line x1="20" y1="15" x2="10" y2="5" stroke="url(#miniWhite)" stroke-width="0.8" stroke-dasharray="1,1"/>
+        <line x1="20" y1="15" x2="30" y2="5" stroke="url(#miniWhite)" stroke-width="0.8" stroke-dasharray="1,1"/>
+        <line x1="20" y1="15" x2="10" y2="25" stroke="url(#miniWhite)" stroke-width="0.8" stroke-dasharray="1,1"/>
+        <line x1="20" y1="15" x2="30" y2="25" stroke="url(#miniWhite)" stroke-width="0.8" stroke-dasharray="1,1"/>
+
+        <!-- 中心节点 -->
+        <circle cx="20" cy="15" r="2" fill="url(#miniNeon)" filter="url(#miniGlow)"/>
+    </g>
+
+    <!-- 简化文字 -->
+    <g id="miniText" text-anchor="start" font-family="'Microsoft YaHei', sans-serif">
+        <text x="70" y="30" font-size="14" font-weight="bold" fill="url(#miniWhite)">森网</text>
+        <text x="70" y="40" font-size="8" fill="url(#miniWhite)" opacity="0.8">SENWANG</text>
+    </g>
+
+    <!-- 装饰元素 -->
+    <g opacity="0.6">
+        <circle cx="140" cy="10" r="1" fill="url(#miniNeon)" filter="url(#miniGlow)"/>
+        <circle cx="130" cy="40" r="1" fill="url(#miniNeon)" filter="url(#miniGlow)"/>
+    </g>
+</svg>
